@@ -21,7 +21,7 @@ import translate from "../bpmnjs-i18n-extension";
 import ConfigModal from "./ConfigModal";
 
 // The default language
-const defaultLanguage = "en";
+const defaultLanguage = "ja";
 
 //config key
 const configKey = "i18n";
@@ -32,13 +32,8 @@ const defaultState = {
 };
 
 const options = [
-    {value: 'de', label: 'Deutsch'},
     {value: 'en', label: 'English'},
-    {value: 'pt_br', label: 'Português (Brasil)'},
-    {value: 'zh_Hans', label: '简体中文'},
-    {value: 'zh_Hant', label: '繁体中文'},
-    {value: 'ru', label: 'Русский'},
-    {value: 'nl_nl', label: 'Nederlands (Netherlands)'}
+    {value: 'ja', label: '日本語'}
 ]
 
 /**

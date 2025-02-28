@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-import bpmnJs from './pt-br/bpmn-js';
-import dmnJs from './pt-br/dmn-js';
-import propertiesPanel from './pt-br/properties-panel';
-import other from './pt-br/other';
+import bpmnJs from './ja/bpmn-js';
+import dmnJs from './ja/dmn-js';
+import propertiesPanel from './ja/properties-panel';
+import other from './ja/other';
 
 /**
  * Joins and exports the translated strings.

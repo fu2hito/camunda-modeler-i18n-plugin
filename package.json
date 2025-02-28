@@ -16,7 +16,7 @@
     "main": "index.js",
     "repository": {
         "type": "git",
-        "url": "ssh://git@github.com/FlowSquad/camunda-modeler-i18n-plugin.git"
+        "url": "ssh://git@github.com/fu2hito/camunda-modeler-i18n-plugin.git"
     },
     "scripts": {
         "build": "run-s bundle",
@@ -24,7 +24,8 @@
         "bundle": "webpack",
         "dev": "webpack -w",
         "prepublishOnly": "run-s bundle",
-        "local": "npm run bundle && copyfiles dist/**/*.* index.js menu/**/*.* '{PATH_TO_CAMUNDA_MODELER}/plugins/i18n'"
+        "local": "pnpm bundle && pnpm xcopy",
+        "xcopy": "xcopy dist \"..\\..\\client\\src\\plugins\\i18n\\dist\" /E /I /Y && if not exist \"..\\..\\client\\src\\plugins\\i18n\\menu\" mkdir \"..\\..\\client\\src\\plugins\\i18n\\menu\" && xcopy index.js \"..\\..\\client\\src\\plugins\\i18n\""
     },
     "keywords": [
         "camunda",
